@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Mind Quest · 1000 Levels</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-wrapper">
+
+    <div class="header">
+        <div class="level-badge">
+            Level <span id="levelDisplay">1</span>
+        </div>
+
+        <div class="difficulty" id="difficultyDisplay">
+            Easy
+        </div>
+    </div>
+
+    <div class="stats">
+
+        <div class="stat">
+            Moves <span id="movesDisplay">0</span>
+        </div>
+
+        <div class="stat">
+            Time <span id="timerDisplay">0:00</span>
+        </div>
+
+    </div>
+
+    <div class="grid-container">
+        <div class="puzzle-grid" id="puzzleGrid"></div>
+    </div>
+
+    <div class="stars-container" id="starsContainer">
+        <span class="star-empty">★</span>
+        <span class="star-empty">★</span>
+        <span class="star-empty">★</span>
+    </div>
+
+    <div class="solved-message" id="solvedMessage"></div>
+
+    <div class="controls">
+
+        <button class="btn" id="undoBtn">
+            ↩ Undo
+        </button>
+
+        <button class="btn" id="hintBtn">
+            💡 Hint
+        </button>
+
+        <button class="btn" id="restartBtn">
+            ⟲ Restart
+        </button>
+
+    </div>
+
+    <div class="footer-nav">
+
+        <button class="nav-btn" id="prevBtn" disabled>
+            ◀ Prev
+        </button>
+
+        <button class="nav-btn" id="nextBtn" disabled>
+            Next ▶
+        </button>
+
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script src="render.js"></script><!-- defines canvas, ctx, draw() -->
+  <script src="input.js"></script><!-- attaches keyboard + touch listeners -->
+  <script src="game.js"></script> <!-- state, loop, boot -->
+
+</body>
+</html>
