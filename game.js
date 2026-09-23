@@ -824,9 +824,9 @@ function tick() {
 // ── Resize ────────────────────────────────────────────────────────────────
 
 function resize() {
-  var size  = Math.min(window.innerWidth, window.innerHeight);
+  const size  = Math.min(globalThis.innerWidth, globalThis.innerHeight);
   CELL      = Math.floor(size / COLS);
-  var px    = CELL * COLS;
+  const px    = CELL * COLS;
   canvas.width  = px;
   canvas.height = px;
   draw();
